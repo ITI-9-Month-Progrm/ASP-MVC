@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    @{
+        var Students = new List<Task04.Student>()
+     {
+          new Task04.Student(){id=1,FName="Asmaa",LName="Khaled",grade=100},
+          new Task04.Student(){id=2,FName="Ali",LName="Ahmed",grade=150},
+          new Task04.Student(){id=3,FName="Sally",LName="Hammad",grade=90}
+        };
+        var myGrid = new WebGrid(Students);
+    }
+    <h1>Student Info</h1>
+    @myGrid.GetHtml()
+  
+</body>
+</html>

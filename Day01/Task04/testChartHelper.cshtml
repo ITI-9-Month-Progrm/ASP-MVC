@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <p>Student Chart</p>
+    @{
+
+        var Students = new List<Task04.Student>()
+     {
+          new Task04.Student(){id=1,FName="Asmaa",LName="Khaled",grade=100},
+          new Task04.Student(){id=2,FName="Ali",LName="Ahmed",grade=150},
+          new Task04.Student(){id=3,FName="Sally",LName="Hammad",grade=90}
+        };
+        var myChart = new Chart(width: 600, height: 400)
+  .AddTitle("Student Grades ")
+  .AddSeries(chartType: "Pie",
+     xValue: Students, xField: "FName",
+     yValues: Students, yFields: "grade")
+  .Write();
+    }
+  @*.DataBindTable(dataSource: Students, xField: "grade")
+  .Write();
+    }*@
+</body>
+</html>

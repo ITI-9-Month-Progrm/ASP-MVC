@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <div style="display:flex;">
+        <div id="createDesign" style="padding:10px; margin-left:10px;margin-right:100px;border:solid; border-radius: 25px; border-color:cornsilk;background-color:cornsilk">
+            <form>
+                <label style="margin:5px">Choose a Background Image</label>
+                <br />
+                <select name="img">
+                    <option value="0.jpg">0</option>
+                    <option value="1.jpg">1</option>
+                    <option value="2.jpg">2</option>
+                    <option value="3.jpg">3</option>
+                    <option value="4.jpg">4</option>
+                    <option value="5.jpg">5</option>
+                    <option value="6.jpg">6</option>
+                    <option value="7.jpg">7</option>
+                    <option value="8.jpg">8</option>
+                    <option value="9.jpg">9</option>
+                    <option value="10.jpg">10</option>
+                    <option value="11.jpg">11</option>
+                </select>
+                <br />
+                <label style="margin:5px">Choose a Font Color</label>
+                <br />
+                <select name="font">
+                    <option value="black">black</option>
+                    <option value="blue">blue</option>
+                    <option value="red">red</option>
+                    <option value="green">green</option>
+                    <option value="yellow">yellow</option>
+                    <option value="purple">purple</option>
+                </select>
+                <br />
+                <label>Choose a Greeting Type</label>
+                <br />
+                <input type="radio" name="greeat" value="BirthDay" />
+                <label>BirthDay</label>
+                <br />
+                <input type="radio" name="greeat" value="Get Well Soon" />
+                <label>Get Well Soon</label>
+                <br />
+                <input type="radio" name="greeat" value="Valentain" />
+                <label>Valentain</label>
+                <br />
+                <input type="radio" name="greeat" value="Congrates" />
+                <label>Congrates</label>
+                <br />
+                <br />
+                <input type="checkbox" name="pic" value="~/backgrounds/bd2.jpg" />
+                <label>Add The Picture</label>
+                <br />
+                <label>Enter The Greeating Message below</label>
+                <br />
+                <textarea name="msg"></textarea>
+                <br />
+                <br />
+                <input type="submit" value="Create Card" />
+            </form>
+        </div>
+        
+        <div id="result" style="width:600px;height:400px;">
+            @if (!Request["img"].IsEmpty() && !Request["font"].IsEmpty() && !Request["greeat"].IsEmpty())
+            {
+
+                var source = "backgrounds/" + Request["img"];
+            <div class="container">
+                <img src=@source style="width:600px;height:400px;border-radius:20px" />
+                <div style="position: absolute; top: 10%; left:45%;color:@Request["font"];font-size:large;font-weight:bolder">@Request["greeat"]</div>
+                <img src=@Request["pic"] style="border-radius:50%; width:150px;height:150px; position: absolute; top: 20%; left:45%;"/>
+                <div style="position: absolute; top: 55%; left:45%;color:@Request["font"];font-size:large;font-weight:bolder">@Request["msg"]</div>
+            </div>
+
+            
+            }
+            
+        </div>
+
+    </div>
+</body>
+</html>
