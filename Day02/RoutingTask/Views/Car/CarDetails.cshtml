@@ -1,0 +1,20 @@
+﻿
+@{
+    ViewBag.Title = "CarDetails";
+    RoutingTask.Models.Car selectedCar = ViewBag.selectedCar;
+}
+
+<h2>CarDetails</h2>
+<div style="display:flex" class="col-lg-12 border">
+    <div class="details  col-lg-6">
+        <p>@selectedCar.Num</p>
+        <p>@selectedCar.Color</p>
+        <p>@selectedCar.Model</p>
+        <p>@selectedCar.Manfacture</p>
+    </div>
+    <div class="pic col-lg-6">
+        
+        <img src="images/1.jpg" />
+    </div>
+</div>
+
