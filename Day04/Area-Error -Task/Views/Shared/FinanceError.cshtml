@@ -1,0 +1,12 @@
+﻿@model System.Web.Mvc.HandleErrorInfo
+@{
+    ViewBag.Title = "Finance Error";
+}
+
+<div class="alert alert-danger">
+    <p>@Model.Exception.Message</p>
+</div>
+<div>
+    <img src="~/Content/images/FinanceError.png" />
+</div>
+
