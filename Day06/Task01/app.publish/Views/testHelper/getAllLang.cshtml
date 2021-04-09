@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewBag.Title = "getAllLang";
+    string[] myList = ViewBag.myList;
+}
+@helper ListHelper(string[] myList) { 
+<ol>
+    @foreach (var item in myList)
+    {
+        <li>@item</li>
+    }
+
+</ol>
+    }
+
+<h2>Langauges : </h2>
+<div style="border:solid black 1px;border-radius:10%;border-color:floralwhite ;background-color:floralwhite;width:200px">
+    @ListHelper(myList)
+</div>
