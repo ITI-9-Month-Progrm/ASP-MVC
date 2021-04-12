@@ -1,0 +1,42 @@
+﻿
+@{
+    ViewBag.Title = "GetAllCars";
+    var carList = (List<Lab07.Models.Car>)ViewBag.carsList;
+}
+
+<h2>GetAllCars</h2>
+
+<Button class="btn btn-primary "><a href="/Car/CreateCar/" class="text-uppercase" style="color:white">Create</a></Button>
+
+
+<table class="table-bordered table table-striped table-hover">
+    <thead style="background-color:darkgray;font-weight:900;text-align:center">
+        <tr>
+
+            <td>ID</td>
+            <td>Color</td>
+            <td>Model</td>
+            <td>Manfacture</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var car in carList)
+        {
+            <tr>
+
+
+                <td>@car.Num</td>
+
+                <td>@car.Color</td>
+                <td>@car.Model</td>
+                <td>@car.Manfacture</td>
+                <td><a href="/Car/CarDetails/@car.Num">Details</a></td>
+                <td><a href="/Car/EditCar/@car.Num">Edit</a></td>
+                <td><a href="/Car/DeleteCar/@car.Num">Delete</a></td>
+            </tr>
+        }
+    </tbody>
+</table>

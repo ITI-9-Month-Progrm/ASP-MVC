@@ -1,0 +1,29 @@
+﻿@{
+    ViewBag.Title = "EditCar";
+    var editedCar = (Lab07.Models.Car)ViewBag.editedCar;
+}
+
+<h2>EditCar</h2>
+<center>
+    <fieldset>
+        <legend>Car Details</legend>
+        <form action="/Car/EditCar/" method="post">
+            <label style="margin:5px">CarID</label>
+            <input style="margin-left: 83px;" type="text" value="@editedCar.Num" name="id" readonly />
+            <br />
+            <label style="margin:5px">CarColor</label>
+            <input style="margin-left: 63px;" type="text" value="@editedCar.Color" name="color" />
+            <br />
+            <label style="margin:5px">CarModel</label>
+            <input style="margin-left: 63px;" type="text" value="@editedCar.Model" name="model" />
+            <br />
+            <label style="margin:5px">CarManfacture</label>
+            <input style="margin-left: 32px; " type="text" value="@editedCar.Manfacture" name="manfactour" />
+            <br />
+            <br />
+            <input type="submit" value="Save" style="margin-left:10%" />
+        </form>
+    </fieldset>
+</center>
+
+
