@@ -191,6 +191,13 @@
     <Content Include="Models\EmployeeModel.edmx.diagram">
       <DependentUpon>EmployeeModel.edmx</DependentUpon>
     </Content>
+    <None Include="Properties\PublishProfiles\AsmaaGroup - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\AsmaaGroup - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
+    <None Include="Properties\PublishProfiles\Groub - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\Groub - FTP1.pubxml" />
+    <None Include="Properties\PublishProfiles\Groub - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\Groub - Web Deploy1.pubxml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />

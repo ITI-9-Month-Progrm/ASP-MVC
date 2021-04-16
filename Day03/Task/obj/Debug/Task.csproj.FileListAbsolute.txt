@@ -72,7 +72,6 @@ D:\ASP-MVC\Day03\Task\bin\System.Web.WebPages.Razor.xml
 D:\ASP-MVC\Day03\Task\bin\Newtonsoft.Json.xml
 D:\ASP-MVC\Day03\Task\bin\Antlr3.Runtime.pdb
 D:\ASP-MVC\Day03\Task\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-D:\ASP-MVC\Day03\Task\obj\Debug\Task.csprojAssemblyReference.cache
 D:\ASP-MVC\Day03\Task\obj\Debug\Task.csproj.CoreCompileInputs.cache
 D:\ASP-MVC\Day03\Task\obj\Debug\Task.csproj.CopyComplete
 D:\ASP-MVC\Day03\Task\obj\Debug\Task.dll
@@ -81,3 +80,4 @@ D:\ASP-MVC\Day03\Task\bin\EntityFramework.dll
 D:\ASP-MVC\Day03\Task\bin\EntityFramework.SqlServer.dll
 D:\ASP-MVC\Day03\Task\bin\EntityFramework.xml
 D:\ASP-MVC\Day03\Task\bin\EntityFramework.SqlServer.xml
+D:\ASP-MVC\Day03\Task\obj\Debug\Task.csprojAssemblyReference.cache

@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="EMPLOYEESEntities-Web.config Connection String" description="EMPLOYEESEntities Connection String used in web.config by the application to access the database." defaultValue="metadata=res://*/Models.EmployeeModel.csdl|res://*/Models.EmployeeModel.ssdl|res://*/Models.EmployeeModel.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=mobilesd.database.windows.net;initial catalog=AyaDB;User Id=MSD;Password=P@ssw0rd2021;MultipleActiveResultSets=True;App=EntityFramework&quot;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="D:\\ASP-MVC\\Day03\\Task\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='EMPLOYEESEntities']/@connectionString" />
+  </parameter>
+</parameters>
